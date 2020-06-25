@@ -4,7 +4,7 @@
     'category': 'Theme/Example',
     'summary': 'Jaroka Theme Example',
     'version': '0.1',
-    'depends': ['website', 'website_theme_install', ],
+    'depends': ['website', 'website_theme_install', 'website_sale', ],
     'data': [
 
         #data

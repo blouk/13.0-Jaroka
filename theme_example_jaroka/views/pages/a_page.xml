@@ -2,17 +2,50 @@
 <odoo>
 
     <record id="a_page" model="ir.ui.view">
-        <field name="name">Home</field>
+        <field name="name">A Page</field>
         <field name="type">qweb</field>
         <field name="key">theme_example_jaroka.a_page</field>
         <field name="arch" type="xml">
-            <t name="Home" priority="29" t-name="theme_example_jaroka.a_page">
+            <t name="A Page" priority="29" t-name="theme_example_jaroka.a_page">
                 <t t-call="website.layout">
                     <t t-set="pageName" t-value="'A Page'"/>
                     <div id="wrap" class="oe_structure oe_empty">
                         <div class="container">
                             <div class="row">
                                 <h1 class="mt4">A page</h1>
+                                <ul>
+                                    <t t-set="array" t-value="[1,2,3]"/>
+                                    <t t-foreach="array" t-as="array_value">
+                                        <t t-if="array_value == 1">
+                                            <li>
+                                                <strong><t t-esc="array_value"/></strong>
+                                            </li>
+                                        </t>
+                                        <t t-else="">
+                                            <li><t t-esc="array_value"/></li>
+                                        </t>
+                                    </t>
+                                </ul>
+
+                                <h2>Example of database request</h2>
+
+                                <t t-set="categories" t-value="request.env['product.public.category'].search([])"/>
+                                <ul>
+                                    <t t-foreach="categories" t-as="category">
+                                        <li><t t-esc="category.name"/></li>
+                                        <t t-set="products" t-value="request.env['product.template'].search([('public_categ_ids','in',category.id),('website_published','=',True)])"/>
+                                        <t t-if="products">
+                                            <ul>
+                                                <t t-foreach="products" t-as="product">
+                                                    <li><t t-esc="product.name"/></li>
+                                                </t>
+                                            </ul>
+
+                                        </t>
+
+                                    </t>
+                                </ul>
+
                             </div>
                         </div>
                     </div>
