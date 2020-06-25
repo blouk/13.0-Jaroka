@@ -8,5 +8,4 @@
 
 
 ## Deploy a module
-Install the module base_import_module
-Then it's possible to zip the module and deploy it.
+Install the module base_import_module then it's possible to zip the module and deploy it.

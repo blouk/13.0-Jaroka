@@ -1,16 +1,14 @@
 {
     'name': 'Jaroka Theme Example',
     'description': 'Jaroka Theme Example',
-    'category': 'Theme',
+    'category': 'Theme/Example',
     'summary': 'Jaroka Theme Example',
     'version': '0.1',
-    'depends': ['website','website_theme_install'],
+    'depends': ['website', 'website_theme_install', ],
     'data': [
 
         #data
         'data/menu.xml',
-
-
 
         'views/assets.xml',
 
@@ -22,5 +20,8 @@
         'static/description/jaroka_description.png',
         'static/description/jaroka_screenshot.jpg',
     ],
+
+        'installable': True,
+
 
 }
