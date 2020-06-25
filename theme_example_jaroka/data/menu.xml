@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <record id="menu_without_odoo_context" model="website.menu">
+            <field name="name">A page</field>
+            <field name="url">/a_page</field>
+            <field name="parent_id" ref="website.main_menu"/>
+            <field name="sequence" type="int">0</field>
+        </record>
+    </data>
+</odoo>

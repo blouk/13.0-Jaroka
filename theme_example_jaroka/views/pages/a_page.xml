@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="a_page" model="ir.ui.view">
+        <field name="name">Home</field>
+        <field name="type">qweb</field>
+        <field name="key">theme_example_jaroka.a_page</field>
+        <field name="arch" type="xml">
+            <t name="Home" priority="29" t-name="theme_example_jaroka.a_page">
+                <t t-call="website.layout">
+                    <t t-set="pageName" t-value="'A Page'"/>
+                    <div id="wrap" class="oe_structure oe_empty">
+                        <div class="container">
+                            <div class="row">
+                                <h1 class="mt4">A page</h1>
+                            </div>
+                        </div>
+                    </div>
+                </t>
+            </t>
+        </field>
+    </record>
+
+    <record id="jaroka_a_page" model="website.page">
+        <field name="website_published">True</field>
+        <field name="url">/a_page</field>
+        <field name="name">Jaroka Page</field>
+        <field name="view_id" ref="theme_example_jaroka.a_page"/>
+    </record>
+
+</odoo>

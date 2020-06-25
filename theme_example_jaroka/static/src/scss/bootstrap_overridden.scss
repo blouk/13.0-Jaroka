@@ -1,0 +1,10 @@
+// bootstrap _variables
+// can be visible here : https://github.com/odoo/odoo/blob/13.0/addons/web/static/lib/bootstrap/scss/_variables.scss
+// or possible to consult the boostrap documentation: https://getbootstrap.com/docs/4.5/getting-started/introduction/
+
+$h1-font-size:                $o-theme-font-size-base * (50 / 16) !default;
+$h2-font-size:                $o-theme-font-size-base * (40 / 16) !default;
+$h3-font-size:                $o-theme-font-size-base * (30 / 16) !default;
+$h4-font-size:                $o-theme-font-size-base * (30 / 16) !default;
+$h5-font-size:                $o-theme-font-size-base * (30 / 16) !default;
+$h6-font-size:                $o-theme-font-size-base * (30 / 16) !default;
