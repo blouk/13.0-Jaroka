@@ -25,6 +25,5 @@
         </xpath>
     </template>
 
-    <!-- <template id="compatibility-saas-11-4-variables" name="Compatibility for saas-11.4 (variables)" inherit_id="theme_common.compatibility-saas-11-4-variables"> <xpath expr="//link[last()]" position="before"> <link rel="stylesheet" type="text/scss"
-    href="/theme_anelusia/static/src/scss/compatibility-saas-11.4-variables.scss"/> </xpath> </template> -->
+
 </odoo>
