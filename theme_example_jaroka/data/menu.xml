@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
+
     <data noupdate="1">
         <record id="menu_without_odoo_context" model="website.menu">
             <field name="name">A page</field>
@@ -7,5 +8,15 @@
             <field name="parent_id" ref="website.main_menu"/>
             <field name="sequence" type="int">0</field>
         </record>
+
+
+        <!-- find why it doesn't work??? -->
+
+        <!-- <record id="sub_menu_without_odoo_context" model="website.menu">
+            <field name="name">A sub menu page</field>
+            <field name="url">/sub_a_page</field>
+            <field name="parent_id" ref="theme_example_jaroka.menu_without_odoo_context"/>
+        </record> -->
+
     </data>
 </odoo>

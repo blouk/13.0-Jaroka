@@ -23,3 +23,10 @@ odoo.define('theme_example_jaroka.simple_widget', function(require) {
 
     });
 });
+
+$(document).ready(
+    function() {
+        // can use normal jquery logic also.
+        console.log('start');
+    }
+);
