@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="products" model="ir.ui.view">
+        <field name="name">Product List</field>
+        <field name="type">qweb</field>
+        <field name="inherit_id" ref="website_sale.products"/>
+        <field name="key">theme_example_jaroka.products</field>
+        <field name="arch" type="xml">
+            <xpath expr="//div[@id='products_grid']" position="before">
+                <h1>My Customization</h1>
+            </xpath>
+            
+        </field>
+    </record>
+</odoo>

@@ -15,6 +15,7 @@
         #pages
         'views/pages/homepage.xml',
         'views/pages/a_page.xml',
+        'views/pages/shop_list.xml',
     ],
     'images': [
         'static/description/jaroka_description.png',
